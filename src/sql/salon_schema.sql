@@ -56,8 +56,15 @@ create table if not exists salon.samochody (
 	foreign key(idKonfiguracji) references salon.konfiguracje(idKonfiguracji)
 );
 
+create table if not exists salon.stan_magazynowy (
+    idSamochodu integer not null,
+    sztuk integer not null,
+    foreign key (idSamochodu) references salon.samochody(idSamochodu),
+    check ( sztuk >= 0 )
+);
+
 create table if not exists salon.zamowienia (
-	id_zamowienia integer not null primary key auto_increment,
+	idZamowienia integer not null primary key auto_increment,
 	idKlienta integer not null,
 	idSamochodu integer not null,
 	data_zamowienia date not null,
@@ -65,7 +72,7 @@ create table if not exists salon.zamowienia (
    	foreign key(idKlienta) references salon.klienci(idKlienta),
 	foreign key(idSamochodu) references salon.samochody(idSamochodu)
 );
-
+		
 
 -- dodawanie rekordów
 
@@ -1866,5 +1873,16 @@ insert into modele values (768, '360', 36);
 insert into modele values (769, '240', 36);
 insert into modele values (770, '340', 36);
 
+insert into nadwozia values (1, 'normalne');
+insert into nadwozia values (2, 'nienormalne');
 
+insert into silniki values (1, 'benzyna', '1.6', 'man', '15', '25');
+insert into silniki values (2, 'diesel', '1.9', 'aut', '20', '30');
+
+insert into konfiguracje values (1, 2, 1, 'bialy');
+insert into konfiguracje values (2, 1, 2, 'czarny');
+
+insert into samochody values (1, 4, 60, 2);
+insert into samochody values (2, 4, 65, 1);
+insert into samochody values (3, 5, 86,2);
 commit;
