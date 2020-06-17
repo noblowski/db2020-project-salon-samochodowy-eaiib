@@ -259,7 +259,7 @@ public class Queries {
                 "s.idMarki = mar.idMarki inner join modele mo on s.idModelu = mo.idModelu inner join konfiguracje kon " +
                 "on s.idKonfiguracji = kon.idKonfiguracji inner join nadwozia nad on kon.idNadwozia = nad.idNadwozia " +
                 "inner join silniki sil on kon.idSilnika = sil.idSilnika inner join stan_magazynowy sm " +
-                "on s.idSamochodu = sm.idSamochodu where sm.sztuk > 0 order by " + orderBy);
+                "on s.idSamochodu = sm.idSamochodu where sm.sztuk > 0 group by 1 order by " + orderBy);
 
         while (resultSet.next()) System.out.println(resultSet.getString(1) + " | " +
                 resultSet.getString(2) + " | " + resultSet.getString(3) + " | " +

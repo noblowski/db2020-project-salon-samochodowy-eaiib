@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="53cm" height="28cm" viewBox="120 24 1054 546" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="459" y="40" width="248.7" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="459" y="40" width="248.7" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="583.35" y="60">Klienci</text>
+    <rect style="fill: #ffffff" x="459" y="68" width="248.7" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="459" y="68" width="248.7" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="462" y="81.2"> idKlienta: integer primary key</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="462" y="97.2"> Imie: varchar(30)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="462" y="113.2"> Nazwisko: varchar(30)</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="121" y="78" width="233.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="121" y="78" width="233.3" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="237.65" y="98">Marki</text>
+    <rect style="fill: #ffffff" x="121" y="106" width="233.3" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="121" y="106" width="233.3" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="124" y="119.2"> idMarki: integer primary key</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="124" y="135.2"> nazwa: varchar(20)</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="427.5" y="160.4" width="241" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="427.5" y="160.4" width="241" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="548" y="180.4">Modele</text>
+    <rect style="fill: #ffffff" x="427.5" y="188.4" width="241" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="427.5" y="188.4" width="241" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="430.5" y="201.6"> idModelu: integer primary key</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="430.5" y="217.6"> nazwa: varchar(20)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="430.5" y="233.6"> idMarki: integer foreign key</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="448.5" y="310.4" width="256.4" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="448.5" y="310.4" width="256.4" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="576.7" y="330.4">Nadwozia</text>
+    <rect style="fill: #ffffff" x="448.5" y="338.4" width="256.4" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="448.5" y="338.4" width="256.4" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="451.5" y="351.6"> idNadwozia: integer primary key</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="451.5" y="367.6"> nazwa: varchar(20)</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="447.5" y="415.4" width="248.7" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="447.5" y="415.4" width="248.7" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="571.85" y="435.4">Silniki</text>
+    <rect style="fill: #ffffff" x="447.5" y="443.4" width="248.7" height="100"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="447.5" y="443.4" width="248.7" height="100"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="450.5" y="456.6"> idSilnika: integer primary key</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="450.5" y="472.6"> rodzaj_paliwa: varchar(20)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="450.5" y="488.6"> pojemnosc: numeric (2,1)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="450.5" y="504.6"> uklad: varchar (30)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="450.5" y="520.6"> moc: integer</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="450.5" y="536.6"> moment_obrotowy: integer</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="777.5" y="361.4" width="287.2" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="777.5" y="361.4" width="287.2" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="921.1" y="381.4">Konfiguracje</text>
+    <rect style="fill: #ffffff" x="777.5" y="389.4" width="287.2" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="777.5" y="389.4" width="287.2" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="780.5" y="402.6"> idKonfiguracji: integer primary key</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="780.5" y="418.6"> idNadwozia: integer foreign key</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="780.5" y="434.6"> idSilnika: integer foreign key</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="780.5" y="450.6"> kolor: varchar (20)</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="783" y="175.8" width="287.2" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="783" y="175.8" width="287.2" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="926.6" y="195.8">Samochody</text>
+    <rect style="fill: #ffffff" x="783" y="203.8" width="287.2" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="783" y="203.8" width="287.2" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="786" y="217"> idSamochodu: integer primary key</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="786" y="233"> idMarki: integer foreign key</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="786" y="249"> idModelu: integer foreign key</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="786" y="265"> idKonfiguracji: integer foreign key</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="850.5" y="505.4" width="264.1" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="850.5" y="505.4" width="264.1" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="982.55" y="525.4">Stan magazynowy</text>
+    <rect style="fill: #ffffff" x="850.5" y="533.4" width="264.1" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="850.5" y="533.4" width="264.1" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="853.5" y="546.6"> idSamochodu: integer foreign key</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="853.5" y="562.6"> sztuk: integer</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="867" y="25.8" width="271.8" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="867" y="25.8" width="271.8" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1002.9" y="45.8">Zamówienia</text>
+    <rect style="fill: #ffffff" x="867" y="53.8" width="271.8" height="84"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="867" y="53.8" width="271.8" height="84"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="870" y="67"> idZamowienia: integer primary key</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="870" y="83"> idKlienta: integer foreign key</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="870" y="99"> idSamochodu: integer foreign key</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="870" y="115"> data_zamowienia: date</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="870" y="131"> metoda_platnosci: varchar(15)</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="708.708,80 787.854,80 787.854,79.8 867,79.8 "/>
+    <polygon style="fill: #000000" points="791.854,79.9 791.854,71.9 799.854,75.9 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="712.708" y="76">1..1</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="863" y="75.8">1..*</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1138.8,95.8 1159.8,95.8 1159.8,213.8 1070.2,213.8 "/>
+    <polygon style="fill: #000000" points="1163.8,154.8 1163.8,146.8 1171.8,150.8 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1142.8" y="91.8">1..1</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1074.2" y="209.8">1..1</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="427.5,198.4 390.9,198.4 390.9,116 354.3,116 "/>
+    <polygon style="fill: #000000" points="394.9,157.2 394.9,149.2 402.9,153.2 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="423.5" y="194.4">1..*</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="358.3" y="112">1..1</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1070.2,261.8 1091.2,261.8 1091.2,399.4 1064.7,399.4 "/>
+    <polygon style="fill: #000000" points="1095.2,330.6 1095.2,322.6 1103.2,326.6 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1074.2" y="257.8">1..1</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1068.7" y="395.4">1..1</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="668.5,198.4 725.75,198.4 725.75,245.8 783,245.8 "/>
+    <polygon style="fill: #000000" points="729.75,222.1 729.75,214.1 737.75,218.1 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="672.5" y="194.4">1..1</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="779" y="241.8">1..1</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="777.5,431.4 736.85,431.4 736.85,453.4 696.2,453.4 "/>
+    <polygon style="fill: #000000" points="740.85,442.4 740.85,434.4 748.85,438.4 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="773.5" y="427.4">1..1</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="700.2" y="449.4">1..1</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="708,351 742.75,351 742.75,415.4 777.5,415.4 "/>
+    <polygon style="fill: #000000" points="746.75,383.2 746.75,375.2 754.75,379.2 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="712" y="347">1..1</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="773.5" y="411.4">1..1</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="783,213.8 762,213.8 762,543.4 850.5,543.4 "/>
+    <polygon style="fill: #000000" points="766,378.6 766,370.6 774,374.6 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="779" y="209.8">1..1</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="846.5" y="539.4">1..*</text>
+  </g>
+</svg>
