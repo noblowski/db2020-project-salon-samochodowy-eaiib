@@ -17,7 +17,6 @@
 ```
 ### Projekt bazy danych
 
-![Alt text](/resources/Diagram1.svg)
 <img src="/resources/Diagram1.svg">
 
 ### Implementacja zapytań SQL
